@@ -1,0 +1,43 @@
+$colors: (
+    primary: #2679ff,
+    secondary: #8eeaff
+);
+
+$padding: 15px;
+$margin: 15px;
+
+@function color($color-name){
+    @return map-get($map: $colors, $key: $color-name)
+}
+header{
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    ul{
+        list-style: none;
+        padding: $padding;
+        li{
+            background: white;
+            margin: 1em auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0, 0.2);
+            width: 80%;
+            a{
+                align-items: center;
+                
+                img{
+                    
+                    width: 15%;
+                    height: 15%;
+                }
+            }
+        }
+    }
+}
